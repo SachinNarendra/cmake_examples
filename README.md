@@ -16,4 +16,5 @@ Learn CMake's Scripting Language in 15 Minutes :
 http://preshing.com/20170522/learn-cmakes-scripting-language-in-15-minutes/
 
 
-
+CMake Wiki Examples :
+https://cmake.org/Wiki/CMake/Examples
