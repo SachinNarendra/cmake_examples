@@ -18,3 +18,7 @@ http://preshing.com/20170522/learn-cmakes-scripting-language-in-15-minutes/
 
 CMake Wiki Examples :
 https://cmake.org/Wiki/CMake/Examples
+
+
+Introduction to CMake by Example :
+http://derekmolloy.ie/hello-world-introductions-to-cmake/
