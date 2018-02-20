@@ -55,3 +55,21 @@ endforeach()
 
 
 # TODO : Set up an example to illustrate the use of the FOLLOW_SYMLINKS flag.
+
+
+# Other GLOB wildcard examples
+set(SOURCE_DIR "../resources/dir_tree/similar_file_names")
+file(GLOB_RECURSE PATH_LIST LIST_DIRECTORIES False ${SOURCE_DIR}/*some_file.py*)
+message("\nOnly some_file(s) from ${SOURCE_DIR} :")
+foreach(PATH ${PATH_LIST})
+    message(STATUS ${PATH})
+endforeach()
+
+
+# Multiple globbing expressions
+set(SOURCE_DIR "../resources/dir_tree/similar_file_names")
+file(GLOB_RECURSE PATH_LIST LIST_DIRECTORIES False ${SOURCE_DIR}/*some_file.py ${SOURCE_DIR}/*some_file.pyc)
+message("\nOnly some_file(s) (py and pyc) from ${SOURCE_DIR} using separate globbing expressions:")
+foreach(PATH ${PATH_LIST})
+    message(STATUS ${PATH})
+endforeach()
